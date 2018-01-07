@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="68dp"
+    sothree:umanoShadowHeight="4dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoDragView="@+id/dragView"
+    tools:context="musiccase.ru.musiccase.ContactActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_contact"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            xmlns:sothree="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/contact_toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            sothree:theme="@style/AppThemeMenu"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/_ReklamBold"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="@string/_reklam"
+            android:textColor="@android:color/background_dark" />
+
+        <View
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d5d5"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:text="@string/music_case"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:text="@string/_7_923_3682222"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPhone"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:text="@string/musiccaseradio_yandex_ru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textEmail"
+            android:linksClickable="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/_DostavkaBold"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="@string/r_shop"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/background_dark" />
+
+        <View
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d5d5"
+            android:layout_marginTop="7dp"/>
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:text="@string/_dostavka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:text="@string/musiccaseradio_yandex_ru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textEmailShop"
+            android:linksClickable="true"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="15dp"
+            android:textColor="@android:color/holo_blue_dark" />
+    </LinearLayout>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="musiccase.ru.musiccase.PlayerFragment"
+        android:id="@+id/contact_fragment_player"/>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="68dp"
+    sothree:umanoShadowHeight="4dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoDragView="@+id/dragView"
+    android:id="@+id/activity_send_email"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="musiccase.ru.musiccase.SendEmailActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            xmlns:sothree="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/send_email_toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            sothree:theme="@style/AppThemeMenu"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/_telefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTelefoniy"
+            android:textStyle="bold"
+            android:textColor="?android:attr/colorActivatedHighlight" />
+
+        <EditText
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/editTextPhone"
+            android:hint="@string/_yourPhone"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="10dp"
+            android:text="@string/_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textColor="?android:attr/colorActivatedHighlight"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/_txtMessage"
+            android:ems="10"
+            android:id="@+id/editTextMessage"
+            android:textColor="@color/colorBlack"/>
+
+        <Button
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="15dp"
+            android:text="@string/_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSendEmail"
+            android:background="@color/colorGrey" />
+    </LinearLayout>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="musiccase.ru.musiccase.PlayerFragment"
+        android:id="@+id/setd_email_fragment_player" />
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_page"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="68dp"
+    sothree:umanoShadowHeight="4dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    tools:context="musiccase.ru.musiccase.HomePage"
+    android:background="@color/colorBlack">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_home"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <fragment
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="musiccase.ru.musiccase.BannerFragment"
+            android:id="@+id/bannerFragment" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/_fon_image"
+                app:srcCompat="@drawable/home_fon"
+                android:scaleType="centerCrop"/>
+
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/play_icon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/home_button_play"
+                android:contentDescription="@string/_button_play" />
+
+            <ImageView
+                android:contentDescription="@android:color/transparent"
+                android:layout_margin="10dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/menu_icon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/home_button_menu" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_alignBottom="@+id/linear_layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="musiccase.ru.musiccase.PlayerFragment"
+            android:id="@+id/home_fragment_player"/>
+    </RelativeLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

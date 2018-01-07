@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Music Case</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="_button_menu">Кнопка меню</string>
+    <string name="_button_play">Кнопка пуск</string>
+    <string name="_contacts">Контакты</string>
+    <string name="_share">Поделиться приложением</string>
+    <string name="_problem">Сообщить о проблеме</string>
+    <string name="_reklam">Реклама</string>
+    <string name="music_case">Разместить рекламу на интернет радио Music Case или интернет - ресурсах:</string>
+    <string name="r_shop">R-shop</string>
+    <string name="_dostavka">Доставка товаров:</string>
+    <string name="_yes">Да</string>
+    <string name="_no">Нет</string>
+    <string name="_telefon">Телефон</string>
+    <string name="_txtMessage">Текст сообщения</string>
+    <string name="_message">Сообщение</string>
+    <string name="_yourPhone">Ваш номер телефона</string>
+    <string name="_send">Отправить</string>
+
+    <string name="_7_923_3682222">+7 (923) 3682222</string>
+    <string name="_urlApplication">http://musiccase.ru</string>
+    <string name="_email">musiccaseradio@yandex.ru</string>
+    <string name="musiccaseradio_yandex_ru">musiccaseradio@yandex.ru</string>
+    <string name="musiccase_ru">musiccase.ru</string>
+    <string name="vk_com_music_case">vk.com/music.case</string>
+    <string name="t_me_musiccase">t.me/musiccase</string>
+    <string name="instagram_com_music_case">instagram.com/music.case</string>
+    <string name="facebook_com_musiccase">facebook.com/musiccaseradio</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="music_case_radio">Music Case Radio</string>
+    <string name="_albom_image">картинка музыкального альбома</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="phoneNum">89233682222</string>
+    <string name="music_no_prepare">Музыка еще не готова к воспроизведению, подождите чуть-чуть</string>
+    <string name="_this_banner">Это баннер</string>
+    <string name="back_button">back button</string>
+    <string name="_fon_image">Фон домашней страницы</string>
+</resources>
