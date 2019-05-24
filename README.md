@@ -1,1 +1,4 @@
-This project was developed for consumer. Maybe it isn't work now, becouse it depended on radio wave.
+Just a player for radio wave.
+
+The lair of all possible mistakes.
+Try to find 100500 memory leaks, it's easy.
